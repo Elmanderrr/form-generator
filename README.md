@@ -4,7 +4,10 @@
 Use Form constructor with your custom props for getting Form object with some public methods. <br />
 var yourForm = new Form(yourprops);
 
+#Methods:
 
+	yourForm.fields.get() - return array with created fields. Each part is jQuery object;
+	yourForm.form.get() - return whole form which you can append whatever you want;
 
 #Typical structure should be like here:
 
@@ -80,12 +83,6 @@ var yourForm = new Form(yourprops);
 	    ]
 	}
 
-
-
-#Methods:
-
-	yourForm.fields.get() - return array with created fields. Each part is jQuery object;
-	yourForm.form.get() - return whole form which you can append whatever you want;
 	
 #Structure:
 	/form-module
