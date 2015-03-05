@@ -78,7 +78,7 @@ function Form(response) {
 //Run through given .type props, create and push each maked field in fields array
 Form.prototype.createFields = function (response) {
     var self = this;
-    var collection = new Collection();
+    var factory = new Factory();
 
     response.fields.forEach(function (field) {
 
@@ -87,11 +87,14 @@ Form.prototype.createFields = function (response) {
                 case 'text':                
                 case 'email':
                 case 'hidden':
-                    self.fields.add(collection.createInput(field));
+                    self.fields.add(factory.create('input',field));
                     break;
 
                 case 'choice':
-                    self.fields.add(collection.createSelect(field));
+                    self.fields.add(factory.create('select',field));
+                    break;
+                    
+                default:
                     break;
 
             }
@@ -108,7 +111,7 @@ Form.prototype.wrap = function (props) {
     form.attr(props)
 
     self.fields.get().forEach(function (f) {
-        form.find('.smb-holder').before(f);
+        form.find('.smb-holder').before(f.elm);
     });
     
     self.form.set(form)

@@ -102,7 +102,7 @@
 	
 #Scaffolding:
 	/form-module
-		collection.js - Factory wich return fields that you want (input,select etc.)
+		Factory.js - Factory wich return fields that you want (input,select etc.)
 			/elements-constructors
 				input.js - Part that respond for creating inputs;
 				select.js - Same but select with options;

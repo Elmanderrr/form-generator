@@ -1,16 +1,23 @@
-function Select(props) {
-    var opts,attrs,elm, self = this;
+function Select(props, methods) {
+    var opts,elm,self = this;
     opts = props.options.choices;
-    attrs = {
+    self.attrs = {
         'select':['required','name'].reduce(function (o,i) { o[i]=props[i]; return o; }, {})
     }
-    elm = $(tpls.select);
+    self.elm = $(tpls.select);
 
     // Inject each taken prop into input
-    self.injectProps(elm,attrs,props.label)
+    methods.injectProps(self.elm,self.attrs,props.label)
     
     // Collect options
-    elm.find('select').html(self.getOptions(opts))
+    self.elm.find('select').html(self.getOptions(opts))
     
-    return elm;
+    return self;
+}
+
+// return string with html
+Select.prototype.getOptions = function (options) {
+   return Object.keys(options).map(function (choice) {
+        return '<option value="'+choice+'" label="'+options[choice]+'">'+options[choice]+'</option>'
+    }).join('')       
 }
