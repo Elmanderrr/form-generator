@@ -1,7 +1,7 @@
 {
-  "name": "Polygon",
+  "name": "test",
   "version": "0.0.1",
-  "description": "my first socket.io app",
+  "description": "form creator",
   "dependencies": {
     "express": "~4.10.7"
   }
