@@ -1,8 +1,11 @@
 # form-generator
 
-Use Form constructor with your custom props "var yourForm = new Form(yourprops)" for getting Form object with follows methods:
+#Usage
+_________
+Use Form constructor with your custom props "var yourForm = new Form(yourprops)" for getting Form object with some public methods.
 
-#typical structure should be like here:
+#Typical structure should be like here:
+_________
 <pre>
 	{
 	    "method": "POST",
