@@ -103,9 +103,8 @@
 	
 #Scaffolding:
 	/form-module
-		Factory.js - Factory wich return fields that you want (input,select etc.)
-			/elements-constructors
-				input.js - Part that respond for creating inputs;
-				select.js - Same but select with options;
-
+		/elements-constructors
+			input.js - Part that respond for creating inputs;
+			select.js - Same but select with options;
+		factory.js - Factory wich return fields that you want (input,select etc.)
 		form.js - main Class which provides you to create and wrap form;
