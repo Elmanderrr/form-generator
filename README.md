@@ -14,7 +14,7 @@ var yourForm = new Form(yourprops);
 		Collection.injectProps - Inject each taken attr into fields;
 		Collection.setValidation - Set validation if needed;
 		Collection.isHidden - hide field element if it's hidden;
-		Collection.getOptions - return html with bunch of options for select;
+		Collection.getOptions - return html string with bunch of options for select;
 
 #Typical structure should be like here:
 
