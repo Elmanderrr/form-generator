@@ -7,6 +7,6 @@ $(function () {
     $('body').append(testForm.form.get());
 
     // or get array of fields and do stuff
-    console.info('fields here', testForm.field.get())
+    console.info('fields here', testForm.fields.get())
 });
 })

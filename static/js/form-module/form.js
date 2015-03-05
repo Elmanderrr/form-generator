@@ -65,8 +65,12 @@ function Form(response) {
     __init();
 
     return {
-        field:self.fields,
-        form:self.form
+        fields:{
+            get:self.fields.get
+        },
+        form:{
+            get:self.form.get
+        }
     }
 
 }
