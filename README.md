@@ -6,8 +6,8 @@ var yourForm = new Form(yourprops);
 
 #Methods:
 	Public:
-		yourForm.fields.get() - return array with created fields. Each part is jQuery object;
-		yourForm.form.get() - return whole form which you can append whatever you want;
+	yourForm.fields.get() - return array with created fields. Each part is jQuery object;
+	yourForm.form.get() - return whole form which you can append whatever you want;
 <!-- 	Private:
 		Form.wrap() - Wrap all fields in form and add prepared jQuery object to form array;
 		Form.createFields - Run through given .type props, create and push each maked field in fields array;
