@@ -17,7 +17,7 @@
 
 #Methods:
 	Public:
-	yourForm.fields.get() - return array with created fields. Each part is jQuery object;
+	yourForm.fields.get() - return array with created fields. 
 	yourForm.form.get() - return whole form which you can append whatever you want;
 <!-- 	Private:
 		Form.wrap() - Wrap all fields in form and add prepared jQuery object to form array;
