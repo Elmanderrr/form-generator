@@ -1,6 +1,10 @@
-function Input(props,methods) {
+;+function () {
+  'use strict';
+
+
+  module.Input = function(props,methods) {
     var self = this;
-    self.elm = $(tpls.input);
+    self.elm = $(module.tpls.input);
     self.attrs = {
         'input':['required','name','type'].reduce(function (o,i) { o[i]=props[i]; return o; }, {})
     }
@@ -13,4 +17,9 @@ function Input(props,methods) {
       .isHidden(self.elm,props.type)
 
     return self;
-}
+  }
+
+
+
+}();
+
