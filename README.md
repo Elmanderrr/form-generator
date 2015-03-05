@@ -1,8 +1,15 @@
 # form-generator
 
 #Usage
+in terminal - nodejs server.js >> http://localhost:3000/ <br />
 Use Form constructor with your custom props for getting Form object with some public methods. <br />
 var yourForm = new Form(yourprops);
+
+#Example:
+	$.get('../json/response.json', function (data) {
+	    var testForm = new Form(data);
+	    $('body').append(testForm.form.get());
+	});
 
 #Methods:
 	Public:
