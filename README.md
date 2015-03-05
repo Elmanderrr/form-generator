@@ -3,7 +3,7 @@
 #Usage
 	in terminal - nodejs server.js 
 	>> http://localhost:3000/ 
-	Use Form constructor with your custom props for getting Form object with some public methods. <br />
+	Use Form constructor with your custom props for getting Form object with some public methods.       
 	var yourForm = new Form(yourprops);
 
 #Example:
