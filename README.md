@@ -2,6 +2,7 @@
 
 #Usage
 	in terminal - git clone https://github.com/Elmanderrr/form-generator.git
+				- cd form-generator
 				- nodejs server.js 
 	>> http://localhost:3000/ 
 	Use Form constructor with your custom props for	getting Form object 
