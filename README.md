@@ -84,7 +84,7 @@ var yourForm = new Form(yourprops);
 	}
 
 	
-#Structure:
+#Scaffolding:
 	/form-module
 		collection.js - Factory wich return fields that you want (input,select etc.)
 			/elements-constructors
