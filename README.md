@@ -90,7 +90,8 @@ var yourForm = new Form(yourprops);
 #Structure:
 	/form-module
 		collection.js - Factory wich return fields that you want (input,select etc.)
-		input.js - Part that respond for creating inputs;
-		select.js - Same but select with options;
+			/elements-constructors
+				input.js - Part that respond for creating inputs;
+				select.js - Same but select with options;
 
 		form.js - main Class which provides you to create and wrap form;
