@@ -1,6 +1,7 @@
 function Collection () {
     var self = this;
 
+    //Inject each taken attr into fields;
     self.injectProps = function (element,attrs,label) {
 
         // Fill label and placeholder for better usability

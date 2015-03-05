@@ -8,13 +8,13 @@ var yourForm = new Form(yourprops);
 	Public:
 		yourForm.fields.get() - return array with created fields. Each part is jQuery object;
 		yourForm.form.get() - return whole form which you can append whatever you want;
-	Private:
+<!-- 	Private:
 		Form.wrap() - Wrap all fields in form and add prepared jQuery object to form array;
 		Form.createFields - Run through given .type props, create and push each maked field in fields array;
 		Collection.injectProps - Inject each taken attr into fields;
 		Collection.setValidation - Set validation if needed;
 		Collection.isHidden - hide field element if it's hidden;
-		Collection.getOptions - return html string with bunch of options for select;
+		Collection.getOptions - return html string with bunch of options for select; -->
 
 #Typical structure should be like here:
 

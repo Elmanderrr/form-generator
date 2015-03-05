@@ -75,6 +75,7 @@ function Form(response) {
 
 }
 
+//Run through given .type props, create and push each maked field in fields array
 Form.prototype.createFields = function (response) {
     var self = this;
     var collection = new Collection();
@@ -99,6 +100,7 @@ Form.prototype.createFields = function (response) {
     return self;
 }
 
+//Wrap all fields in form and add prepared jQuery object to form array
 Form.prototype.wrap = function (props) {
     var self = this;
     var form = $(tpls.form);
