@@ -1,4 +1,4 @@
-# form-generator
+# FORM-GENERATOR
 
 #Usage
 	in terminal - git clone https://github.com/Elmanderrr/form-generator.git
